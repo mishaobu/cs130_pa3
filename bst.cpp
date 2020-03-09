@@ -5,8 +5,8 @@ using namespace std;
 
 struct Node{
     ~Node() {
-        //if (left) delete left;
-        //if (right) delete right;
+        if (left) delete left;
+        if (right) delete right;
     }
     Node() {}
     Node(int x) : value{x} {}
